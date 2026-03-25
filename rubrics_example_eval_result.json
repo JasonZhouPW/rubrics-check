@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "generated_at": "2026-03-24T22:16:05.298583",
+    "model": "",
+    "base_url": "",
+    "source_files": [
+      "rubrics_example.json (6 items)"
+    ],
+    "total_rubrics": 6
+  },
+  "summary": {
+    "total": 6,
+    "pass": 4,
+    "warn": 2,
+    "fail": 0,
+    "pass_rate": "66.7%",
+    "constraint_type_counts": {
+      "hard": 2,
+      "soft": 2,
+      "optional": 2
+    },
+    "binary_type_counts": {
+      "binary": 3,
+      "nonbinary": 3
+    },
+    "check_pass_rates": {
+      "category_valid": "100.0%",
+      "binary_field_valid": "100.0%",
+      "score_conditions_complete": "100.0%",
+      "objectivity": "100.0%",
+      "quantification": "100.0%",
+      "mece_within_item": "100.0%",
+      "completion_quality_separated": "100.0%",
+      "facts_reference_present": "66.7%"
+    },
+    "top_issues": [
+      "[local:warning] related_facts: 未填写 related_facts，若评分标准涉及可验证事实建议补充",
+      "Field 'facts_reference' is missing. The specification requires both 'related_facts' and 'facts_reference' for fact-checkable rubrics.",
+      "[local:warning] facts_reference: 填写了 related_facts 但缺少 facts_reference（来源引用）",
+      "The rubric includes specific verifiable facts in score_4_condition but is missing the required 'related_facts' and 'facts_reference' fields."
+    ]
+  },
+  "results": [
+    {
+      "id": "HC-1",
+      "constraint_type": "hard",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "binary_field_valid": true,
+        "score_conditions_complete": true,
+        "objectivity": true,
+        "quantification": true,
+        "mece_within_item": true,
+        "completion_quality_separated": true,
+        "facts_reference_present": false
+      },
+      "status": "warn",
+      "issues": [
+        "Field 'facts_reference' is missing. The specification requires both 'related_facts' and 'facts_reference' for fact-checkable rubrics.",
+        "[local:warning] facts_reference: 填写了 related_facts 但缺少 facts_reference（来源引用）"
+      ],
+      "suggestion": "Add the 'facts_reference' field containing the specific part of the user prompt or context that verifies the request for two separate Word docs."
+    },
+    {
+      "id": "HC-2",
+      "constraint_type": "hard",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "binary_field_valid": true,
+        "score_conditions_complete": true,
+        "objectivity": true,
+        "quantification": true,
+        "mece_within_item": true,
+        "completion_quality_separated": true,
+        "facts_reference_present": true
+      },
+      "status": "pass",
+      "issues": [],
+      "suggestion": ""
+    },
+    {
+      "id": "SC-1",
+      "constraint_type": "soft",
+      "binary_type": "nonbinary",
+      "checks": {
+        "category_valid": true,
+        "binary_field_valid": true,
+        "score_conditions_complete": true,
+        "objectivity": true,
+        "quantification": true,
+        "mece_within_item": true,
+        "completion_quality_separated": true,
+        "facts_reference_present": true
+      },
+      "status": "pass",
+      "issues": [],
+      "suggestion": ""
+    },
+    {
+      "id": "SC-2",
+      "constraint_type": "soft",
+      "binary_type": "nonbinary",
+      "checks": {
+        "category_valid": true,
+        "binary_field_valid": true,
+        "score_conditions_complete": true,
+        "objectivity": true,
+        "quantification": true,
+        "mece_within_item": true,
+        "completion_quality_separated": true,
+        "facts_reference_present": false
+      },
+      "status": "warn",
+      "issues": [
+        "The rubric includes specific verifiable facts in score_4_condition but is missing the required 'related_facts' and 'facts_reference' fields.",
+        "[local:warning] related_facts: 未填写 related_facts，若评分标准涉及可验证事实建议补充"
+      ],
+      "suggestion": "Add 'related_facts' and 'facts_reference' fields to provide the ground truth for the case details (date, cause, injury, causal link)."
+    },
+    {
+      "id": "OC-1",
+      "constraint_type": "optional",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "binary_field_valid": true,
+        "score_conditions_complete": true,
+        "objectivity": true,
+        "quantification": true,
+        "mece_within_item": true,
+        "completion_quality_separated": true,
+        "facts_reference_present": true
+      },
+      "status": "pass",
+      "issues": [
+        "[local:warning] related_facts: 未填写 related_facts，若评分标准涉及可验证事实建议补充"
+      ],
+      "suggestion": ""
+    },
+    {
+      "id": "OC-2",
+      "constraint_type": "optional",
+      "binary_type": "nonbinary",
+      "checks": {
+        "category_valid": true,
+        "binary_field_valid": true,
+        "score_conditions_complete": true,
+        "objectivity": true,
+        "quantification": true,
+        "mece_within_item": true,
+        "completion_quality_separated": true,
+        "facts_reference_present": true
+      },
+      "status": "pass",
+      "issues": [
+        "[local:warning] related_facts: 未填写 related_facts，若评分标准涉及可验证事实建议补充"
+      ],
+      "suggestion": ""
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+    "prompt": [
+        "There is a switch and a button on the back of the computer power supply. What is the button generally used for?"
+    ],
+    "rubric": {
+        "Hard Constraint": [
+            {
+                "rubric_description": "Whether the common functions of the button on the back of the computer power supply are accurately described (including but not limited to Power Reset button, smart fan start/stop, voltage selection, etc.)",
+                "score_0_condition": "Incorrect answer, such as describing the button's function as the main power on/off switch, or completely unrelated functions other than adjusting fan speed.",
+                "score_1_condition": "Accurately describes at least one common function of the button (e.g., power reset, smart fan start/stop, or voltage selection).",
+                "related_facts": "Common functions of the button on the back of a computer power supply include: the power reset function on standard ATX power supplies (to force a restart of the power supply unit module), the smart fan start/stop function on modern high-end power supplies (fan stops at low load), and the voltage selection function on older power supplies (to switch between 115V/230V).",
+                "facts_reference": "https://en.wikipedia.org/wiki/ATX, https://www.shurl.cc/c6cb3da4ba4100153a136ed2fbe209e5, https://www.iesdouyin.com/share/video/7398069521120005388/, https://www.iesdouyin.com/share/video/7122771247234125093/"
+            }
+        ],
+        "Soft Constraint": [
+            {
+                "rubric_description": "Whether the answer covers the main use cases for the button.",
+                "score_0_condition": "Fails to mention any use cases related to the button's function.",
+                "score_1_condition": "Mentions a use case unrelated to the button's function (e.g., 'used to turn on the computer').",
+                "score_2_condition": "Mentions one related but non-primary use case (e.g., 'used to restart the computer' without specifying it's for when the power supply fails).",
+                "score_3_condition": "Mentions 1-2 primary use cases (e.g., 'force reset when the power supply cannot be shut down normally,' 'use when the computer freezes and cannot be restarted via the OS').",
+                "score_4_condition": "Mentions all common primary use cases (including PSU module failure, severe system freeze, forced reset during hardware debugging, etc.).",
+                "related_facts": "The main use cases for the power reset button include: when the power supply cannot be shut down normally, when the system freezes and cannot be restarted via software, and for forcibly cutting power during hardware diagnostics.",
+                "facts_reference": "https://www.zol.com.cn/article/1000000000000.html"
+            },
+            {
+                "rubric_description": "Whether the functional difference between the 'switch' and the 'button' on the back of the power supply is clearly distinguished.",
+                "score_0_condition": "Completely confuses the two functions (e.g., 'the switch and the button do the same thing,' 'the button is the power switch').",
+                "score_1_condition": "Partially confuses them (e.g., mentions their functions are different but does not clearly explain the difference).",
+                "score_2_condition": "Basically distinguishes them (e.g., 'the switch cuts off power, the button is for reset' but without detailed explanation).",
+                "score_3_condition": "Clearly distinguishes them (e.g., 'the switch is used to completely cut off the power input, while the button is used to force a reset of the module while it is powered').",
+                "score_4_condition": "Very clearly distinguishes them (not only explains the functional difference but also their different usage scenarios, e.g., 'after turning off the switch, you must turn it back on to get power, whereas the button restores power without needing to toggle the switch').",
+                "related_facts": "The power switch (rocker switch) controls the on/off state of the power input, while the button (reset button) controls the restart of the power supply module (without cutting the input).",
+                "facts_reference": "https://en.wikipedia.org/wiki/ATX"
+            },
+            {
+                "rubric_description": "Whether the answer contains incorrect information.",
+                "score_0_condition": "Contains serious errors (e.g., describing the button's function as adjusting voltage, controlling fan speed, or other completely unrelated functions).",
+                "score_1_condition": "Contains minor errors (e.g., calling 'power reset' a 'system reset' but the core function is correct).",
+                "score_2_condition": "Contains slight inaccuracies (e.g., imprecise wording, like 'restart the computer' instead of 'restart the power supply,' but it doesn't affect understanding).",
+                "score_3_condition": "No errors (functional description is completely accurate).",
+                "score_4_condition": "No errors and uses precise, professional terminology (e.g., using terms like 'Power Reset button,' 'PSU module reset').",
+                "related_facts": "The function of the power button is to reset the power supply module, not to directly restart the system or adjust other hardware parameters.",
+                "facts_reference": "https://www.zol.com.cn/article/1000000000000.html"
+            },
+            {
+                "rubric_description": "Whether the answer covers the functional diversity of the button on the back of computer power supplies (differences across models/eras).",
+                "score_0_condition": "Fails to mention anything about the functional diversity of the button.",
+                "score_1_condition": "Mentions functional differences that are factually incorrect (e.g., 'all power supply buttons are for voltage selection').",
+                "score_2_condition": "Mentions one common type of functional difference (e.g., 'buttons on older power supplies are for voltage selection' or 'buttons on modern power supplies are for fan start/stop').",
+                "score_3_condition": "Mentions two common types of functional differences (e.g., 'older ones are for voltage selection, modern ones are for fan start/stop').",
+                "score_4_condition": "Mentions all common functional differences (including power reset, smart fan start/stop, and voltage selection on different power supplies).",
+                "related_facts": "The function of the button on the back of a computer power supply varies by model/era: older power supplies often had a voltage selection switch (115V/230V), modern high-end power supplies often have a smart fan start/stop button (fan stops at low load), and standard ATX power supplies have a power reset button.",
+                "facts_reference": "https://en.wikipedia.org/wiki/ATX, https://www.shurl.cc/c6cb3da4ba4100153a136ed2fbe209e5, https://www.iesdouyin.com/share/video/7398069521120005388/, https://www.iesdouyin.com/share/video/7122771247234125093/"
+            }
+        ],
+        "Optional Constraint": [
+            {
+                "rubric_description": "Whether it provides precautions for using the button.",
+                "score_0_condition": "Fails to mention any precautions related to using the button.",
+                "score_1_condition": "Mentions at least one reasonable precaution (e.g., 'do not press it frequently, as it may damage the power supply module,' 'ensure the computer is off or frozen before pressing').",
+                "related_facts": "Frequently pressing the power reset button can cause an overload on the power supply module's capacitors, shortening its lifespan.",
+                "facts_reference": "https://www.zol.com.cn/article/1000000000000.html"
+            },
+            {
+                "rubric_description": "Whether it explains the button's function in plain language (avoiding or explaining technical terms).",
+                "score_0_condition": "Uses only technical terms without explanation (e.g., 'this button is for the Power Reset function' without saying what that means).",
+                "score_1_condition": "Uses technical terms with a vague explanation (e.g., 'Power Reset just restarts the power supply' without further detail).",
+                "score_2_condition": "Uses technical terms with a simple explanation (e.g., 'the Power Reset button, which is used to force a restart of the power supply').",
+                "score_3_condition": "Mainly uses plain language (e.g., 'this button is used to force the power supply to start working again when it has a problem').",
+                "score_4_condition": "Uses completely plain and easy-to-understand language (e.g., 'the small button on the back of the computer power supply is for when your computer freezes or the power won't turn off; pressing it will restart the power supply without having to unplug it or flip the main switch')."
+            },
+            {
+                "rubric_description": "Whether it provides specific usage advice for the button (based on its function and scenario).",
+                "score_0_condition": "Fails to mention any specific usage advice for the button.",
+                "score_1_condition": "Mentions at least one reasonable piece of specific advice (e.g., 'press the fan start/stop button for a silent environment,' 'keep the fan running normally during high-load work,' 'use the main power switch to cut power during maintenance').",
+                "related_facts": "Pressing the fan start/stop button can achieve silence at low loads, while keeping the fan running at high loads ensures proper cooling; using the main power switch is safer for cutting power during maintenance.",
+                "facts_reference": "https://www.iesdouyin.com/share/video/7398069521120005388/, https://www.iesdouyin.com/share/video/7122771247234125093/"
+            }
+        ]
+    }
+}

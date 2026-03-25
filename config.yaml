@@ -1,0 +1,20 @@
+# Rubrics Evaluator 配置文件
+# 使用方法：python rubrics_evaluator.py --config config.yaml
+
+# LLM 配置
+llm:
+  base_url: "https://coding.dashscope.aliyuncs.com/v1"
+  api_key: "your api key"
+  model: "qwen3.5-plus"
+  timeout: 120         # 2 分钟超时
+  max_retries: 5       # 增加重试次数
+
+# 批处理配置
+batch:
+  size: 1              # 每批处理的条目数
+  delay: 2             # 批次间延迟 2 秒
+
+# 输出配置
+output:
+  format: "json"       # json 或 text
+  pretty: true         # 美化输出

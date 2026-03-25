@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "generated_at": "2026-03-25T09:43:38.228785",
+    "mode": "local_only",
+    "model": null,
+    "base_url": null,
+    "source_files": [
+      "2_lubricant_dispute.json (14 items)"
+    ],
+    "total_rubrics": 14
+  },
+  "summary": {
+    "total": 14,
+    "pass": 14,
+    "warn": 0,
+    "fail": 0,
+    "pass_rate": "100.0%",
+    "constraint_type_counts": {
+      "hard": 8,
+      "soft": 4,
+      "optional": 2
+    },
+    "binary_type_counts": {
+      "binary": 14
+    },
+    "check_pass_rates": {
+      "category_valid": "100.0%",
+      "score_conditions_complete": "N/A",
+      "objectivity": "N/A",
+      "quantification": "N/A",
+      "mece_within_item": "N/A",
+      "completion_quality_separated": "N/A",
+      "facts_reference_present": "N/A"
+    },
+    "top_issues": [
+      "[local:warning] related_facts: 未填写 related_facts，若评分标准涉及可验证事实建议补充",
+      "[local:warning] facts_reference: 填写了 related_facts 但缺少 facts_reference（来源引用）"
+    ]
+  },
+  "results": [
+    {
+      "id": "_autogen_1",
+      "constraint_type": "hard",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [],
+      "suggestion": ""
+    },
+    {
+      "id": "_autogen_2",
+      "constraint_type": "hard",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [],
+      "suggestion": ""
+    },
+    {
+      "id": "_autogen_3",
+      "constraint_type": "hard",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [],
+      "suggestion": ""
+    },
+    {
+      "id": "_autogen_4",
+      "constraint_type": "hard",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [],
+      "suggestion": ""
+    },
+    {
+      "id": "_autogen_5",
+      "constraint_type": "hard",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [],
+      "suggestion": ""
+    },
+    {
+      "id": "_autogen_6",
+      "constraint_type": "hard",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [],
+      "suggestion": ""
+    },
+    {
+      "id": "_autogen_7",
+      "constraint_type": "hard",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [],
+      "suggestion": ""
+    },
+    {
+      "id": "_autogen_8",
+      "constraint_type": "hard",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [
+        "[local:warning] facts_reference: 填写了 related_facts 但缺少 facts_reference（来源引用）"
+      ],
+      "suggestion": ""
+    },
+    {
+      "id": "_autogen_9",
+      "constraint_type": "soft",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [
+        "[local:warning] related_facts: 未填写 related_facts，若评分标准涉及可验证事实建议补充"
+      ],
+      "suggestion": ""
+    },
+    {
+      "id": "_autogen_10",
+      "constraint_type": "soft",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [
+        "[local:warning] related_facts: 未填写 related_facts，若评分标准涉及可验证事实建议补充"
+      ],
+      "suggestion": ""
+    },
+    {
+      "id": "_autogen_11",
+      "constraint_type": "soft",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [
+        "[local:warning] related_facts: 未填写 related_facts，若评分标准涉及可验证事实建议补充"
+      ],
+      "suggestion": ""
+    },
+    {
+      "id": "_autogen_12",
+      "constraint_type": "soft",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [
+        "[local:warning] related_facts: 未填写 related_facts，若评分标准涉及可验证事实建议补充"
+      ],
+      "suggestion": ""
+    },
+    {
+      "id": "_autogen_13",
+      "constraint_type": "optional",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [],
+      "suggestion": ""
+    },
+    {
+      "id": "_autogen_14",
+      "constraint_type": "optional",
+      "binary_type": "binary",
+      "checks": {
+        "category_valid": true,
+        "score_conditions_complete": null,
+        "objectivity": null,
+        "quantification": null,
+        "mece_within_item": null,
+        "completion_quality_separated": null,
+        "facts_reference_present": null
+      },
+      "status": "pass",
+      "issues": [],
+      "suggestion": ""
+    }
+  ]
+}

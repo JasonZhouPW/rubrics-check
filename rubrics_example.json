@@ -1,0 +1,76 @@
+{
+  "prompt": [
+    "张某于2024年3月15日在某超市购物时，因地面湿滑摔倒致左腿骨折，请起草民事起诉状及证据目录。"
+  ],
+  "rubric": {
+    "Hard Constraint": [
+      {
+        "ID": "HC-1",
+        "rubric_description": "Whether two independent Word (.docx) files are generated.",
+        "Binary vs. Non-binary": "Binary",
+        "score_1_condition": "Two separate .docx files generated with correct names.",
+        "score_0_condition": "Fewer than two files, wrong format, or content merged.",
+        "related_facts": "User requested two separate Word docs.",
+        "facts_reference": ""
+      },
+      {
+        "ID": "HC-2",
+        "rubric_description": "Whether complaint includes all 6 mandatory sections per Article 119.",
+        "Binary vs. Non-binary": "Binary",
+        "score_1_condition": "All 6 sections present and non-empty.",
+        "score_0_condition": "One or more mandatory sections missing.",
+        "related_facts": "民事诉讼法第119条 specifies mandatory contents.",
+        "facts_reference": "民事诉讼法第119条"
+      }
+    ],
+    "Soft Constraint": [
+      {
+        "ID": "SC-1",
+        "rubric_description": "How accurately the legal basis is cited.",
+        "Binary vs. Non-binary": "Non-binary",
+        "score_0_condition": "No relevant articles cited.",
+        "score_1_condition": "One article cited with wrong number.",
+        "score_2_condition": "One correct article cited (either 民法典第1198条 or 民事诉讼法第119条).",
+        "score_3_condition": "Both 民法典第1198条 and 民事诉讼法第119条 cited correctly.",
+        "score_4_condition": "Both above plus at least one more relevant article (e.g. 民法典第1165条), all correct.",
+        "related_facts": "民法典第1198条 covers premises liability.",
+        "facts_reference": "民法典第1198条；民事诉讼法第119条"
+      },
+      {
+        "ID": "SC-2",
+        "rubric_description": "Whether facts section contains all 4 key elements of the case.",
+        "Binary vs. Non-binary": "Non-binary",
+        "score_0_condition": "Facts section absent or 0 elements present.",
+        "score_1_condition": "1 of 4 elements present.",
+        "score_2_condition": "2 of 4 elements present.",
+        "score_3_condition": "3 of 4 elements present.",
+        "score_4_condition": "All 4: date+location 2024-03-15, cause (wet floor), injury (left leg fracture), causal link to supermarket negligence.",
+        "related_facts": "",
+        "facts_reference": ""
+      }
+    ],
+    "Optional Constraint": [
+      {
+        "ID": "OC-1",
+        "rubric_description": "Whether evidence list uses a standard numbered table with number, name, source, purpose columns.",
+        "Binary vs. Non-binary": "Binary",
+        "score_1_condition": "Table format with at least 3 of 4 standard columns.",
+        "score_0_condition": "Plain text without table, or missing 2+ standard columns.",
+        "related_facts": "",
+        "facts_reference": ""
+      },
+      {
+        "ID": "OC-2",
+        "rubric_description": "Whether language avoids colloquial expressions.",
+        "Binary vs. Non-binary": "Non-binary",
+        "score_0_condition": "3 or more colloquial expressions (e.g. '就是说', '然后', '那个').",
+        "score_1_condition": "2 colloquial expressions.",
+        "score_2_condition": "1 colloquial expression.",
+        "score_3_condition": "No colloquial expressions; standard legal language.",
+        "score_4_condition": "No colloquial expressions and precise legal terminology consistently ('原告' not '我方').",
+        "related_facts": "",
+        "facts_reference": ""
+      }
+    ]
+  }
+}
